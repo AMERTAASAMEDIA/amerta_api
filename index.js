@@ -15,6 +15,7 @@ const Master_pengguna = require("./routes/Master_pengguna.route.js");
 
 
 // Transaksi 
+const Tr_task = require("./routes/Tr_task.route.js")
 const Tr_logisticRoute = require("./routes/Tr_logistic.route.js");
 const Tr_logisticKeluarRoute = require("./routes/Tr_logistic_keluar.route.js");
 const Tr_qc = require("./routes/Tr_qc.route.js");
@@ -46,6 +47,7 @@ app.use("/api/Master_pengguna", Master_pengguna);
 
 
 // Transaksi 
+app.use("/api/Tr_task", Tr_task)
 app.use("/api/Tr_qc", Tr_qc)
 app.use("/api/Tr_logistic", Tr_logisticRoute)
 app.use("/api/Tr_logistic_keluar", Tr_logisticKeluarRoute)
