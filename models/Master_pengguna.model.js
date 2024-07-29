@@ -73,7 +73,7 @@ const Master_penggunaSchema = mongoose.Schema({
     timestamps: true,
 });
 
-
+ 
 const Master_pengguna = mongoose.model("Master_pengguna", Master_penggunaSchema);
 
 module.exports = Master_pengguna;

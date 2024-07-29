@@ -16,7 +16,7 @@ const getTrtask = async(req, res) => {
     }
 };
 
-
+ 
 // FIND ONE BY ID
 const getTrtaskById = async(req, res) => {
     try {

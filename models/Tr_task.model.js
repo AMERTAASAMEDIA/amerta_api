@@ -13,6 +13,18 @@ const Tr_taskSchema = mongoose.Schema({
         type: String,
         required: [true, "Domain tolong jangan dikosongi"],
     },
+    Tr_task_nama:{
+        type: String,
+        required: [true, "Nama Pelanggan tolong jangan dikosongi"],
+    },
+    Tr_task_no_telepon:{
+        type: String,
+        required: [true, "No Telepon Pelanggan tolong jangan dikosongi"],
+    },
+    Tr_task_alamat:{
+        type: String,
+        required: [true, "Alamat Pelanggan tolong jangan dikosongi"],
+    },
     Tr_task_priority: {
         type: String,
         required: [true, "Domain tolong jangan dikosongi"],
@@ -37,7 +49,6 @@ const Tr_taskSchema = mongoose.Schema({
         type: String,
         default: "[]",
     },
-
 }, {
     timestamps: true,
 });
